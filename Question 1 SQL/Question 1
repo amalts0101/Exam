@@ -1,0 +1,17 @@
+a.SELECT Student.name,Marks.marks
+FROM Student 
+FULL JOIN Marks
+ON Student.ID = Marks.student_id WHERE(subject_name = 'CS') OR (subject_name = Bio);
+
+b.SELECT Student.name,Marks.SUM(marks)
+FROM Student 
+FULL JOIN Marks
+ON Student.ID = Marks.student_id
+
+c.
+
+
+d.SELECT Student.name
+FROM Student
+FULL JOIN Marks
+ON Student.ID = Marks WHERE SUM(Marks) 
